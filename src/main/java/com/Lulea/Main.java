@@ -1,6 +1,25 @@
 package com.Lulea;
 import java.util.Scanner;
-
+/**
+ * The program calculates the daily energy production of a solar panel system
+ * based on the date, sunrise, and sunset times provided by the user.
+ * It validates the input, computes the total sunshine hours, and determines
+ * the expected energy output and its monetary value.
+ *
+ * Pseudocode:
+ *   1. Define constants for solar radiation, panel efficiency, dimensions, and price per kWh.
+ *   2. Prompt the user to enter the date and validate that it falls within June or July.
+ *   3. Read and validate the sunrise and sunset times.
+ *   4. Ensure the sunrise time is earlier than the sunset time.
+ *   5. Calculate the total sunshine hours.
+ *   6. Compute the energy production using the formula:
+ *      - Production (Wh) = solar radiation * efficiency * total panel area * sunshine hours.
+ *      - Convert to kWh by dividing by 1000.
+ *   7. Calculate the profit based on electricity price.
+ *   8. Print the results in a structured format.
+ *
+ * @author Ludvig Fendert (ludfen-4)
+ */
 public class Main {
     public static void main(String[] args) {
         // Constants for solar panel calculations
